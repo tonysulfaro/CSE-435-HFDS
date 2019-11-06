@@ -24,6 +24,7 @@ body {
 .header-image {
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
         url("assets/car-on-road.jpg");
+    /* https: //www.pexels.com/photo/top-view-photo-of-curved-road-surrounded-by-trees-1834403/ */
     height: 50%;
     padding: 2em;
     background-position: center;
