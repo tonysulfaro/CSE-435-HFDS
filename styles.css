@@ -13,7 +13,8 @@ body {
 }
 
 .container {
-    padding: 4em;
+    padding: 0 4em 0 4em;
+    padding-top: 70px;
 }
 
 .container * {
@@ -53,6 +54,7 @@ body {
     right: 0;
     width: 100%;
     text-align: right;
+    background-color: #000000;
 }
 
 .topnav ul {
@@ -78,7 +80,7 @@ body {
     text-decoration: none;
 }
 
-.topnav a:hover {
+a:hover {
     color: green;
 }
 
@@ -112,4 +114,20 @@ body {
 .team-card a {
     text-decoration: none;
     color: green;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 4em;
+    margin-top: 4em;
+}
+
+footer p {
+    margin-top: 2em;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
 }
