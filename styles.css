@@ -54,7 +54,7 @@ body {
     z-index: 10;
     right: 0;
     width: 100%;
-    background-color: #000000;
+    background-color: #212121;
     padding: 0 2em 0 0;
 }
 
@@ -111,7 +111,7 @@ a:hover {
 }
 
 footer {
-    background-color: #000000;
+    background-color: #212121;
     color: #ffffff;
     padding: 4em;
     margin-top: 4em;
