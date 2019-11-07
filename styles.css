@@ -51,6 +51,8 @@ body {
     position: fixed;
     z-index: 10;
     right: 0;
+    width: 100%;
+    text-align: right;
 }
 
 .topnav ul {
