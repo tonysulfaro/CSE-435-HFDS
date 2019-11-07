@@ -81,7 +81,7 @@ body {
 }
 
 a:hover {
-    color: green;
+    color: #2E7D32;
 }
 
 .team-card-container {
@@ -107,7 +107,7 @@ a:hover {
 
 .team-card a {
     text-decoration: none;
-    color: green;
+    color: #2E7D32;
 }
 
 footer {
@@ -133,14 +133,40 @@ input {
     border-radius: 5px;
     background-color: #ffffff;
     font-size: 16px;
+    padding: 0.5em;
 }
 
 button {
     color: #ffffff;
-    background-color: green;
+    background-color: #2E7D32;
     border: none;
     border-radius: 5px;
     padding: 1em 2em 1em 2em;
     margin: 1em 0 0 0;
     font-size: 16px;
+}
+
+/* dark mode users rejoice */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #424242;
+        color: white;
+    }
+
+    .team-card {
+        background-color: #212121;
+    }
+
+    .header-image {
+        background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+            url("assets/car-on-road.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    img {
+        filter: grayscale(20%);
+    }
 }
