@@ -124,3 +124,22 @@ footer a {
     text-decoration: none;
     color: white;
 }
+
+/* form styles */
+input {
+    width: 300px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-size: 16px;
+}
+
+button {
+    color: #ffffff;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    padding: 1em 2em 1em 2em;
+    margin: 1em 0 0 0;
+    font-size: 16px;
+}
