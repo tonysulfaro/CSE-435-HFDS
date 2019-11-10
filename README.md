@@ -10,9 +10,7 @@ system will allow drivers to enable a hands-free assisted driving feature which 
 existing lane without needing to control the steering wheel._
 
 ## Deployment
-This site is hosted on Heroku and goes through a CI/CD pipeline with every change on the master branch. You can check the site out [here](https://cse435-hfds.herokuapp.com/) for the hosted version or peruse the source code here.
-
-I opted to use Heroku to make it easier to add server-side code if it ever becomes necessary for the prototype portion of this project.
+This site is hosted on the MSU CSE servers. You can check the site out [here](https://www.cse.msu.edu/~sulfaroa/CSE-435-HFDS/) for the hosted version or peruse the source code here.
 
 ## Authors
 
