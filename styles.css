@@ -80,8 +80,13 @@ body {
     text-decoration: none;
 }
 
-a:hover {
+a {
     color: #2E7D32;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4caf50;
 }
 
 .team-card-container {
@@ -103,11 +108,6 @@ a:hover {
 .team-card img {
     border-radius: 50%;
     height: 200px;
-}
-
-.team-card a {
-    text-decoration: none;
-    color: #2E7D32;
 }
 
 footer {
