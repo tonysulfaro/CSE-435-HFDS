@@ -146,6 +146,20 @@ button {
     font-size: 16px;
 }
 
+.demo-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.demo-container img {
+    width: 50%;
+}
+
+.demo-instructions {
+    width: 40%;
+    margin: 0 0 0 2em;
+}
+
 /* dark mode users rejoice */
 @media (prefers-color-scheme: dark) {
     body {
