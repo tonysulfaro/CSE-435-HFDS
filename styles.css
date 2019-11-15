@@ -151,8 +151,12 @@ button {
     flex-wrap: wrap;
 }
 
-.demo-container img {
+.demo-img {
     width: 50%;
+}
+
+.demo-img img {
+    width: 100%;
 }
 
 .demo-instructions {
