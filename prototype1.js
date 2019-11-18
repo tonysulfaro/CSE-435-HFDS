@@ -3,23 +3,71 @@ document.body.addEventListener('keydown', function (event){
     const keyname = event.key;
 
     if(keyname == 'h'){
-        alert('this is coming soon');
+        
+        // enable handsfree
+        let sys_status = document.getElementById('system-status');
+
+        // disable if enabled
+        if(sys_status.innerHTML == 'HFDS: Enabled'){
+            sys_status.innerHTML = "HFDS: Disabled";
+            sys_status.style.color = "red";
+        }
+        // enable if disabled
+        else {
+            sys_status.innerHTML = "HFDS: Enabled";
+            sys_status.style.color = "green";
+        }
+        
     }
     // up keypress
-    else if(event.keyCode == '38'){
-        alert('this is coming soon');
+    else if(keyname == 'w'){
+
+        let spedometer = document.getElementById('demo-speed');
+
+        // do nothing if at 95 mph
+        if(parseInt(spedometer.innerHTML) == 95){
+            return;
+        }
+
+        // increase speed by 5
+        spedometer.innerHTML = parseInt(spedometer.innerHTML) + 5 + ' MPH';
     }
     // down keypress
-    else if(event.keyCode == '40'){
-        alert('this is coming soon');
+    else if(keyname == 's'){
+
+        let spedometer = document.getElementById('demo-speed');
+
+        // do nothing if at 0 mph
+        if(parseInt(spedometer.innerHTML) == 0){
+            return;
+        }
+
+        // decrease speed by 5
+        spedometer.innerHTML = parseInt(spedometer.innerHTML) - 5 + ' MPH';
     }
     // left keypress
-    else if(event.keyCode == '37'){
-        alert('this is coming soon');
+    else if(keyname == 'a'){
+
+        // move background to right
+        let background_img = document.getElementById('demo-background');
+
+        if(background_img.style.left == ''){
+            background_img.style.left = '-625px';
+        }
+
+        background_img.style.left = parseInt(background_img.style.left) + 5 + 'px';
     }
     // right keypress
-    else if(event.keyCode == '39'){
-        alert('this is coming soon');
+    else if(keyname == 'd'){
+
+        // move background to left
+        let background_img = document.getElementById('demo-background');
+
+        if(background_img.style.left == ''){
+            background_img.style.left = '-625px';
+        }
+
+        background_img.style.left = parseInt(background_img.style.left) - 5 + 'px';
     }
 
     // scenarios

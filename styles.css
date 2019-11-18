@@ -147,9 +147,10 @@ button {
 }
 
 .demo-container {
-    display: flex;
     margin: 0 0 4em 0;
-    position: relative;
+    overflow: hidden;
+    width: 1000px;
+    height: 800px;
 }
 
 .demo-img {
@@ -162,6 +163,47 @@ button {
 
 .demo-instructions {
     margin: 0 0 0 2em;
+}
+
+/* background overlap stuff */
+.demo-foreground {
+    background-image: url('assets/hands-free-foreground.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    width: 1000px;
+    position: absolute;
+    z-index: 2;
+}
+
+.demo-background {
+    background-image: url('assets/road-pov.jpeg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 1600px;
+    position: relative;
+    width: 2000px;
+    left: -625px;
+}
+
+#demo-speed {
+    z-index: 3;
+    font-size: 3em;
+    width: 100%;
+    color: #ffffff;
+    position: absolute;
+    top: 500px;
+    left: 400px;
+}
+
+#system-status {
+    z-index: 3;
+    font-size: 1em;
+    color: red;
+    position: absolute;
+    top: 540px;
+    left: 830px;
 }
 
 /* control elements in demo */

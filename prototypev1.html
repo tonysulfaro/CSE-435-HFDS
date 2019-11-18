@@ -31,10 +31,13 @@
         <h1>Prototype V1</h1>
 
         <div class="demo-container">
-            <p class="demo-img">
-                <img src="assets/hands-free-static.jpg" alt="car dash steering wheel">  
-            </p>
-
+            <!-- <p class="demo-img">
+                <img src="assets/hands-free-alpha.png" alt="car dash steering wheel">  
+            </p> -->
+            <div class="demo-foreground"></div>
+            <div id="demo-background" class="demo-background"></div>
+            <p id="demo-speed">0 MPH</p>
+            <p id="system-status">HFDS: Disabled</p>
         </div>
             
             <div class="demo-instructions">
@@ -44,9 +47,9 @@
 
                 <ul>
                     <li>Enable hands-free: H</li>
-                    <li>Steer: Left and right arrow keys</li>
-                    <li>Brake: Down arrow key</li>
-                    <li>Accelerate: Up Arrow Key</li>
+                    <li>Steer: A and S keys</li>
+                    <li>Brake: S</li>
+                    <li>Accelerate: W</li>
                 </ul>
 
                 <h2>Scenarios</h2>
