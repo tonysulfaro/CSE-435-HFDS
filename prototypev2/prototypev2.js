@@ -1,5 +1,6 @@
 var steering;
 var warning;
+var driver_attentive = true;
 
 function steerLeft(){
     // move background to right
@@ -80,6 +81,16 @@ function steer(){
 function playWarning(){
     let warning_sound = document.getElementById('warning-sound');
     warning_sound.play();
+
+    let sys_status = document.getElementById('system-status');
+    sys_status.innerHTML = 'HFDS: Enabled Re-engage'
+
+    if(sys_status.style.color == "red"){
+        sys_status.style.color = 'orange';
+    }
+    else {
+        sys_status.style.color = 'red';
+    }
 }
 
 document.body.addEventListener('keydown', function (event){
@@ -131,16 +142,20 @@ document.body.addEventListener('keydown', function (event){
 
     // scenarios
     else if(keyname == '1'){
+        clearInterval(warning);
         setSpeed(65);
         enableHFDS();
     }
     else if(keyname == '2'){
+        clearInterval(warning);
         alert('scenario coming soon');
     }
     else if(keyname == '3'){
+        clearInterval(warning);
         warning = setInterval(playWarning, 1000);
     }
     else if(keyname == '4'){
+        clearInterval(warning);
         setSpeed(65);
         enableHFDS();
         setTimeout(disableHFDS, 4000);

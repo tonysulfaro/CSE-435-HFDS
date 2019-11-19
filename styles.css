@@ -207,6 +207,7 @@ button {
     position: absolute;
     top: 540px;
     left: 830px;
+    width: 80px;
 }
 
 /* control elements in demo */
