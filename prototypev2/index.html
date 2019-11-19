@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hands-Free Driving</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+    <nav id="navbar" class="topnav">
+        <ul>
+            <li>
+                <a href="../home.html#home">Home</a>
+            </li>
+            <li>
+                <a id="secure" href="https://www.cse.msu.edu/~sulfaroa/CSE-435-HFDS/secure">Secure</a>
+            </li>
+            <li>
+                <a href="https://www.cse.msu.edu/~cse435/" target="__blank" rel="noopener">Course Site</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Prototype V2</h1>
+
+        <div class="demo-container">
+            <div class="demo-foreground"></div>
+            <div id="demo-background" class="demo-background"></div>
+            <p id="demo-speed">0 MPH</p>
+            <p id="system-status">HFDS: Disabled</p>
+        </div>
+            
+            <div class="demo-instructions">
+                <h2>Instructions</h2>
+                <p>This is the interface for our implementation of a hands-free driving system. Listed Below are
+                    some functions that you can use.</p>
+
+                <ul>
+                    <li>Enable hands-free: H</li>
+                    <li>Steer: A and S keys</li>
+                    <li>Brake: S</li>
+                    <li>Accelerate: W</li>
+                </ul>
+
+                <h2>Scenarios</h2>
+                <p><i>Press the accompanying key to demonstrate the scenario.</i></p>
+                <ol>
+                    <li>System fully operational: Ideal use case for such a system</li>
+                    <li>System failure: System relinquishes control to the driver</li>
+                    <li>Driver inattentive: System detects driver is not engaged and issues warnings</li>
+                    <li>Driver override: Driver takes control from the system</li>
+                </ol>
+            </div>
+        
+    </div>
+
+    <footer>
+        <h2>About</h2>
+        <p><a href="https://github.com/tonysulfaro/CSE-435-HFDS/blob/master/LICENSE.md">License</a></p>
+        <p><a href="https://github.com/tonysulfaro/CSE-435-HFDS">Source</a></p>
+    </footer>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="prototypev2.js"></script>
+
+</html>
