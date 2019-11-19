@@ -182,7 +182,9 @@ button {
     background-image: url('assets/road-pov.jpeg');
     background-position: bottom;
     background-repeat: no-repeat;
-    height: 1600px;
+    background-size: cover;
+    background-position-y: -700px;
+    height: 600px;
     position: relative;
     width: 2000px;
     left: -625px;
@@ -190,12 +192,12 @@ button {
 
 #demo-speed {
     z-index: 3;
-    font-size: 3em;
+    font-size: 2em;
     width: 100%;
     color: #ffffff;
     position: absolute;
-    top: 500px;
-    left: 400px;
+    top: 540px;
+    left: 430px;
 }
 
 #system-status {
