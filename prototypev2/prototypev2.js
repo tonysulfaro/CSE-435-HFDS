@@ -54,6 +54,8 @@ function enableHFDS(){
 }
 
 function disableHFDS(){
+    // stop steering vehicle
+    clearInterval(steering);
     let sys_status = document.getElementById('system-status');
     sys_status.innerHTML = "HFDS: Disabled";
     sys_status.style.color = "red";
@@ -89,7 +91,6 @@ document.body.addEventListener('keydown', function (event){
     // up keypress
     else if(keyname == 'w'){
         disableHFDS();
-        clearInterval(steering);
         clearInterval(warning);
         let spedometer = document.getElementById('demo-speed');
 
@@ -104,7 +105,6 @@ document.body.addEventListener('keydown', function (event){
     // down keypress
     else if(keyname == 's'){
         disableHFDS();
-        clearInterval(steering);
         clearInterval(warning);
         let spedometer = document.getElementById('demo-speed');
 
@@ -118,14 +118,12 @@ document.body.addEventListener('keydown', function (event){
     }
     // left keypress
     else if(keyname == 'a'){
-        clearInterval(steering);
         clearInterval(warning);
         disableHFDS();
         steerLeft();
     }
     // right keypress
     else if(keyname == 'd'){
-        clearInterval(steering);
         clearInterval(warning);
         disableHFDS();
         steerRight();
@@ -143,6 +141,16 @@ document.body.addEventListener('keydown', function (event){
         warning = setInterval(playWarning, 1000);
     }
     else if(keyname == '4'){
-        alert('scenario coming soon');
+        setSpeed(65);
+        enableHFDS();
+        setTimeout(disableHFDS, 4000);
+
+        // brake simulation
+        setTimeout(function(){
+            setSpeed(60);
+        }, 4000);
+        setTimeout(function(){
+            setSpeed(50);
+        }, 4400);
     }
 });
