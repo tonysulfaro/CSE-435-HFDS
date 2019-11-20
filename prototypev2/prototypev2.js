@@ -1,5 +1,6 @@
 var steering;
 var warning;
+var failure;
 var warning_playing = false;
 
 function steerLeft(){
@@ -94,6 +95,24 @@ function playWarning(){
     }
 }
 
+function playFailure(){
+    let warning_sound = document.getElementById('warning-sound');
+    warning_sound.play();
+    warning_playing = true;
+
+    disableHFDS();
+
+    let sys_status = document.getElementById('system-status');
+    sys_status.innerHTML = 'HFDS: Failure Re-engage'
+
+    if(sys_status.style.color == "red"){
+        sys_status.style.color = 'orange';
+    }
+    else {
+        sys_status.style.color = 'red';
+    }
+}
+
 document.body.addEventListener('keydown', function (event){
     const keyname = event.key;
 
@@ -163,7 +182,7 @@ document.body.addEventListener('keydown', function (event){
     }
     else if(keyname == '2'){
         clearInterval(warning);
-        alert('scenario coming soon');
+        warning = setInterval(playFailure, 1000);
     }
     else if(keyname == '3'){
         clearInterval(warning);
