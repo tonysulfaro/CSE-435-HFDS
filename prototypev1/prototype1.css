@@ -1,0 +1,31 @@
+
+.demo-container {
+    margin: 0 0 4em 0;
+    overflow: hidden;
+    width: 1000px;
+    height: 600px;
+}
+
+.demo-img {
+    width: 75%;
+}
+
+.demo-img img {
+    width: 100%;
+}
+
+.demo-instructions {
+    margin: 0 0 0 2em;
+}
+
+/* background overlap stuff */
+.demo-foreground {
+    background-image: url('assets/hands-free-foreground.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    width: 1000px;
+    position: absolute;
+    z-index: 2;
+}
