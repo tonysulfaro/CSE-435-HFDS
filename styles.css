@@ -127,6 +127,17 @@ footer a {
     color: white;
 }
 
+/* table styles */
+table, th, td {
+    border: 1px solid #424242;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 1em;
+}
+
 /* form styles */
 input {
     width: 300px;
