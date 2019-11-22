@@ -176,6 +176,10 @@ button {
         color: white;
     }
 
+    a {
+        color: #81C784;
+    }
+
     .team-card {
         background-color: #212121;
     }
