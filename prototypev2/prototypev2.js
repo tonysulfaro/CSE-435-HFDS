@@ -198,12 +198,13 @@ document.body.addEventListener('keydown', function (event){
     else if(keyname == 'e'){
         clearInterval(warning);
         clearInterval(vibrate);
+
+        enableHFDS();
+
         if(failure_found){
             disableHFDS();
         }
-        else{
-            enableHFDS();
-        }
+    
     }
 
     // scenarios
@@ -211,6 +212,8 @@ document.body.addEventListener('keydown', function (event){
     else if(keyname == '1'){
         clearInterval(warning);
         clearInterval(vibrate);
+        warning_playing = false;
+        failure_found = false;
         setSpeed(65);
         enableHFDS();
     }
@@ -218,12 +221,19 @@ document.body.addEventListener('keydown', function (event){
     else if(keyname == '2'){
         clearInterval(warning);
         clearInterval(vibrate);
+        warning_playing = false;
+        failure_found = false;
         warning = setInterval(playFailure, 1000);
+        setTimeout(function(){
+            playVibration();
+        }, 4400);
     }
     // system warning
     else if(keyname == '3'){
         clearInterval(warning);
         clearInterval(vibrate);
+        warning_playing = false;
+        failure_found = false;
         enableHFDS();
         warning = setInterval(playWarning, 1000);
         setTimeout(function(){
@@ -233,6 +243,8 @@ document.body.addEventListener('keydown', function (event){
     else if(keyname == '4'){
         clearInterval(warning);
         clearInterval(vibrate);
+        warning_playing = false;
+        failure_found = false;
         setSpeed(65);
         enableHFDS();
         setTimeout(disableHFDS, 4000);
