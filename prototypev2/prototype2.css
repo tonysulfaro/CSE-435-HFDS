@@ -1,9 +1,13 @@
 
 .demo-container {
-    margin: 0 0 4em 0;
+    margin: 1em 0 4em 0;
     overflow: hidden;
     width: 1000px;
-    height: 800px;
+    height: 750px;
+}
+
+.demo-container * {
+    margin-top: 0;
 }
 
 .demo-img {
@@ -48,7 +52,7 @@
     width: 100%;
     color: #ffffff;
     position: absolute;
-    top: 540px;
+    top: 570px;
     left: 430px;
 }
 
@@ -57,7 +61,7 @@
     font-size: 1em;
     color: red;
     position: absolute;
-    top: 540px;
+    top: 560px;
     left: 830px;
     width: 80px;
 }

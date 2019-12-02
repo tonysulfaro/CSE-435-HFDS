@@ -19,6 +19,10 @@
         <source src="../assets/alert-sound.wav" type="audio/wav">
     </audio>
 
+    <audio id="vibration-sound">
+        <source src="../assets/vibration-sound.wav" type="audio/wav">
+    </audio>
+
     <nav id="navbar" class="topnav">
         <ul>
             <li>
@@ -37,7 +41,7 @@
         <h1>Prototype V2</h1>
 
         <div class="demo-container">
-            <div class="demo-foreground"></div>
+            <div id="demo-foreground" class="demo-foreground"></div>
             <div id="demo-background" class="demo-background"></div>
             <p id="demo-speed">0 MPH</p>
             <p id="system-status">HFDS: Disabled</p>
@@ -53,6 +57,7 @@
                     <li>Steer: A and D keys</li>
                     <li>Brake: S</li>
                     <li>Accelerate: W</li>
+                    <li>Show Attention: E</li>
                 </ul>
 
                 <h2>Scenarios</h2>
@@ -60,7 +65,7 @@
                 <ol>
                     <li><b>System fully operational:</b><br>Ideal use case for such a system. The system steers the vehicle within the lane.</li>
                     <li><b>System failure:</b><br> System relinquishes control to the driver in the event of a failure.</li>
-                    <li><b>Driver inattentive:</b><br> System detects driver is not engaged and issues warnings to them. The driver must touch the steering wheel to let the vehicle know they are there.</li>
+                    <li><b>Driver inattentive:</b><br> System detects driver is not engaged and issues warnings to them. The warnings increase in intensity from auditory and visual alerts to vibration alerts within the driver seat. Pressing E simulates the driver becoming attentive to the road ahead of them.</li>
                     <li><b>Driver override:</b><br> Driver takes control from the system. The driver decelerates to disengage the system. While the system is engaged pressing the accelerator, brake pedal, or steering will disengage the system as well.</li>
                 </ol>
             </div>
