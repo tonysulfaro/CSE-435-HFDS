@@ -239,6 +239,23 @@ document.body.addEventListener('keydown', function (event){
         setTimeout(function(){
             playVibration();
         }, 4400);
+        setTimeout(function(){
+            setSpeed(60);
+        }, 8800);
+        setTimeout(function(){
+            setSpeed(50);
+        }, 9200);
+        setTimeout(function(){
+            setSpeed(15);
+        }, 9500);
+        setTimeout(function(){
+            setSpeed(0);
+        }, 10000);
+        setTimeout(function(){
+            clearInterval(warning);
+            clearInterval(vibrate);
+            disableHFDS();
+        }, 10000);
     }
     else if(keyname == '4'){
         clearInterval(warning);
