@@ -1,209 +1,212 @@
 * {
-    margin: 0;
+  margin: 0;
 }
 
 body,
 html {
-    height: 100%;
-    margin: 0;
+  height: 100%;
+  margin: 0;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
-    padding: 0 4em 0 4em;
-    padding-top: 70px;
+  padding: 0 4em 0 4em;
+  padding-top: 70px;
 }
 
 .container * {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 
 .container h2 {
-    margin-top: 2em;
+  margin-top: 2em;
 }
 
 /* header image block */
 .header-image {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
-        url("assets/car-on-road.jpg");
-    /* https: //www.pexels.com/photo/top-view-photo-of-curved-road-surrounded-by-trees-1834403/ */
-    height: 50%;
-    padding: 2em;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("assets/car-on-road.jpg");
+  /* https: //www.pexels.com/photo/top-view-photo-of-curved-road-surrounded-by-trees-1834403/ */
+  height: 50%;
+  padding: 2em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 
-    /* align h1 vertically and horizontally */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  /* align h1 vertically and horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .header-image h1 {
-    color: white;
+  color: white;
 }
 
 /* navbar styles */
 .topnav {
-    position: fixed;
-    z-index: 10;
-    right: 0;
-    width: 100%;
-    background-color: #212121;
-    padding: 0 2em 0 0;
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  width: 100%;
+  background-color: #212121;
+  padding: 0 2em 0 0;
 }
 
 .topnav ul {
-    list-style-type: none;
-    margin: 0;
+  list-style-type: none;
+  margin: 0;
 }
 
 .topnav li {
-    float: left;
+  float: left;
 }
 
 .topnav li a {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    padding: 1em;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 1em;
 }
 
 .topnav a {
-    display: block;
-    color: white;
-    text-decoration: none;
+  display: block;
+  color: white;
+  text-decoration: none;
 }
 
 a {
-    color: #2E7D32;
-    text-decoration: none;
+  color: #2e7d32;
+  text-decoration: none;
 }
 
 a:hover {
-    color: #4caf50;
+  color: #4caf50;
 }
 
 .team-card-container {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .team-card {
-    /* this looked nice so I threw it in https://codepen.io/sdthornton/pen/wBZdXq */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12),
-        0 2px 4px rgba(0, 0, 0, 0.24);
-    border-radius: 10px;
-    width: 250px;
-    text-align: center;
-    margin: 2em 2em 0 0;
-    padding: 2em;
+  /* this looked nice so I threw it in https://codepen.io/sdthornton/pen/wBZdXq */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  margin: 2em 2em 0 0;
+  padding: 2em;
 }
 
 .team-card img {
-    border-radius: 50%;
-    height: 200px;
+  border-radius: 50%;
+  height: 200px;
 }
 
 /* Resources container */
 .row {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .col-50 {
-    width: 50%;
+  width: 50%;
 }
 
 footer {
-    background-color: #212121;
-    color: #ffffff;
-    padding: 4em;
-    margin-top: 4em;
+  background-color: #212121;
+  color: #ffffff;
+  padding: 4em;
+  margin-top: 4em;
 }
 
 footer p {
-    margin-top: 2em;
+  margin-top: 2em;
 }
 
 footer a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 /* table styles */
-table, th, td {
-    border: 1px solid #424242;
-    border-collapse: collapse;
+table,
+th,
+td {
+  border: 1px solid #424242;
+  border-collapse: collapse;
 }
 
-th, td {
-    text-align: left;
-    padding: 1em;
+th,
+td {
+  text-align: left;
+  padding: 1em;
 }
 
 /* form styles */
 input {
-    width: 300px;
-    height: 25px;
-    border-radius: 5px;
-    background-color: #ffffff;
-    font-size: 16px;
-    padding: 0.5em;
+  width: 300px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-size: 16px;
+  padding: 0.5em;
 }
 
 button {
-    color: #ffffff;
-    background-color: #2E7D32;
-    border: none;
-    border-radius: 5px;
-    padding: 1em 2em 1em 2em;
-    margin: 1em 0 0 0;
-    font-size: 16px;
+  color: #ffffff;
+  background-color: #2e7d32;
+  border: none;
+  border-radius: 5px;
+  padding: 1em 2em 1em 2em;
+  margin: 1em 0 0 0;
+  font-size: 16px;
 }
-
 
 /* dark mode users rejoice */
 @media (prefers-color-scheme: dark) {
-    body {
-        background-color: #424242;
-        color: white;
-    }
+  body {
+    background-color: #424242;
+    color: white;
+  }
 
-    a {
-        color: #81C784;
-    }
+  a {
+    color: #81c784;
+  }
 
-    .team-card {
-        background-color: #212121;
-    }
+  .team-card {
+    background-color: #212121;
+  }
 
-    .header-image {
-        background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
-            url("assets/car-on-road.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-    }
+  .header-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("assets/car-on-road.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
 
-    img {
-        filter: grayscale(20%);
-    }
+  img {
+    filter: grayscale(20%);
+  }
 
-    table, th, td {
-        border: 1px solid #ffffff;
-    }
+  table,
+  th,
+  td {
+    border: 1px solid #ffffff;
+  }
 }
 
-@media (max-width: 700px){
-    .col-50 {
-        width: 100%;
-    }
+@media (max-width: 700px) {
+  .col-50 {
+    width: 100%;
+  }
 }
